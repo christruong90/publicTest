@@ -6,7 +6,7 @@ import dummyHeader from 'constants/dummyData/pages.json';
 
 class Candidates extends Component {
   myfunction = () => {
-    // start from here
+    console.log("hello")
   };
 
   render() {
@@ -19,6 +19,8 @@ class Candidates extends Component {
           description={dummyHeader[0].description}
         />
         <Table head={dummyCandidates.head} body={dummyCandidates.body} />
+
+        <button onClick={this.myfunction}>Save to Local</button> 
       </>
     );
   }
